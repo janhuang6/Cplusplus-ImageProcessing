@@ -1,0 +1,39 @@
+#!/bin/sh
+#
+# Run test query to worklist server using values in systems.xml
+#
+# $Name: Atlantis710R01_branch $
+# $Id: workreqs,v 1.2 Exp $
+
+ATLASHOME=/export/home/atlas
+CONFIGDIR=${ATLASHOME}/etc
+
+LD_LIBRARY_PATH=${ATLASHOME}/lib:${ATLASHOME}/DicomJetConnect/mc3c/mc3lib:$LD_LIBRARY_PATH
+MC3APPSDIR=${ATLASHOME}/DicomJetConnect/mc3c/mc3apps
+export MC3APPSDIR
+export LD_LIBRARY_PATH
+
+if [ "x$*" = "x" ] ; then
+	source ${CONFIGDIR}/sys_config > /dev/null 2>&1
+	SC_Hunt_Values > /dev/null 2>&1
+
+	if [ "x${SC_WKLST_CALLINGAETITLE}" != "x" ] ; then
+		ARGS="${ARGS} -a ${SC_WKLST_CALLINGAETITLE}"
+	fi
+	if [ "x${SC_WKLST_IPADDRESS}" != "x" ] ; then
+		ARGS="${ARGS} -n ${SC_WKLST_IPADDRESS}"
+	fi
+	if [ "x${SC_WKLST_PORTNUMBER}" != "x" ] ; then
+		ARGS="${ARGS} -p ${SC_WKLST_PORTNUMBER}"
+	fi
+	if [ "x${SC_WKLST_CALLEDAETITLE}" != "x" ] ; then
+		ARGS="${ARGS} ${SC_WKLST_CALLEDAETITLE}"
+	fi
+	
+#	echo "No arguments passed (pass -h for help)"
+	echo "\"$0 ${ARGS}\""
+else
+	ARGS=$*
+fi
+
+( cd ${MC3APPSDIR} && ${ATLASHOME}/bin/work_scus ${ARGS} )
