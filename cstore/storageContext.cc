@@ -1,11 +1,9 @@
 /*
  * file:	storageContext.cc
  * purpose:	Implementation of the StorageContext and StorageContextPool
- * created:	08-Nov-07
- * property of:	Philips Nuclear Medicine
  *
  * revision history:
- *   08-Nov-07	Jiantao Huang		    initial version
+ *   Jiantao Huang		    initial version
  */
 
 #include "storageContext.h"

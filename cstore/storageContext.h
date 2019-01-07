@@ -6,11 +6,9 @@
  * purpose:	StorageContext is a place holder for storage information,
  *          one per storage target. StorageContextPool manages the
  *          group of storage targets.
- * created:	08-Nov-07
- * property of:	Philips Nuclear Medicine
  *
  * revision history:
- *   08-Nov-07	Jiantao Huang		    initial version
+ *   Jiantao Huang		    initial version
  */
 
 #include "storageStrategy.h"

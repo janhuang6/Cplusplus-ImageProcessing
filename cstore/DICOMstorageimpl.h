@@ -4,11 +4,9 @@
 /*
  * file:	DICOMstorageimpl.h
  * purpose:	Implementation of the CORBA abstract class
- * created:	24-Aug-07
- * property of:	Philips Nuclear Medicine
  *
  * revision history:
- *   24-Aug-07	Jiantao Huang           initial version
+ *   Jiantao Huang           initial version
  * inspection history:
  */
 

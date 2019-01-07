@@ -4,8 +4,6 @@
  *
  *    $Revision: 1.6 $
  *
- *        $Date: 2010/03/08 20:22:35 $
- *
  *       Author: Modified by jhuang from Merge program
  *
  *  Description: This is a C-ECHO service class provider application

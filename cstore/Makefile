@@ -1,15 +1,13 @@
 #
 # file:		Makefile
 # purpose:	build cstore
-# created:	24-Aug-2007
-# property of:	PHILIPS Nuclear Medicine
 #
 # inspection history:
 #
 # revision history:
-#   24-Aug-2007	Jiantao Huang		Initial version
+#   Jiantao Huang		Initial version
 #
-# $Id: Makefile,v 1.2 2008/08/08 02:01:52 jhuang Exp $
+# $Id: Makefile,v 1.2 jhuang Exp $
 #
 
 BASEDIR=			../../

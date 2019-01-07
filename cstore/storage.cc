@@ -1,11 +1,9 @@
 /*
  * file:	storage.cc
  * purpose:	Implementation of the Storage class
- * created:	17-Oct-07
- * property of:	Philips Nuclear Medicine
  *
  * revision history:
- *   17-Oct-07	Jiantao Huang		    initial version
+ *   Jiantao Huang		    initial version
  */
 
 #include "storage.h"

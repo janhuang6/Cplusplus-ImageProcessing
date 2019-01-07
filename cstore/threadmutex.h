@@ -1,27 +1,18 @@
 /*
  * file: $Source: /usr/adac/Repository/camera/camera/binner/src/libacqbase/threadmutex.h,v $
- * Copyright (c) 2002 by ADAC Laboratories (a Philips Medical Systems Company)
- * Confidential - All Rights Reserved
- *
- * These classes are based on examples in the book
- * "Multi-Threaded Programming in C++" by Mark Walmsley, Springer, 2000
- * and the book "Pattern-Oriented Software Architecture, Volume 2"
- * by Douglas Schmidt, et al, Wiley, 2000
  *
  * inspection history:
  *
  * ----------------------------
  * Source Code pre-history
  * revision 1.1
- * date: 2002/07/08 03:50:58;  author: ccarman;  state: Exp;
  * Modification Request Number from DDT:           PEGma16408
- * Who authorized this change (use e-mail name):   ccarman
  * Reason for changes. (OK to use several lines):  Adding threading classes
  * to enable the thread synchronization changes in the control server.
  * They are added here to support their future use in other sub-systems.
  * ----------------------------
  *
- * $Id: threadmutex.h,v 1.4 2006/12/20 02:04:41 sheavner Exp $
+ * $Id: threadmutex.h,v 1.4 Exp $
  */
 #include <pthread.h>
 
