@@ -3,13 +3,11 @@
  * purpose:	cstore program to store the DICOM images into PACs.
  *          It supports storage only, storage with synchronous
  *          commitment, and storage with asynchronous commitment.
- * created:	24-Aug-07
- * property of	PHILIPS Nuclear Medicine
  *
  * inspection history:
  *
  * revision history:
- *   24-Aug-07  Jiantao Huang		initial version
+ *   Jiantao Huang		initial version
  */
 
 static const char rcsName[] = "$Name: Atlantis710R01_branch $";

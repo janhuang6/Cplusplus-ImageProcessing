@@ -6,11 +6,9 @@
  * purpose:	CommitContext is a place holder for the commitment information,
  *          one per storage commitment target. CommitContextPool manages the
  *          group of storage commitment targets.
- * created:	08-Nov-07
- * property of:	Philips Nuclear Medicine
  *
  * revision history:
- *   08-Nov-07	Jiantao Huang		    initial version
+ *   Jiantao Huang		    initial version
  */
 
 #include "control/connectcamera.h"
